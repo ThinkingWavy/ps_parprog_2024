@@ -1,4 +1,4 @@
-CFLAGS = -std=gnu11 -Wall -Werror -Wextra -fopenmp 
+CFLAGS = -std=gnu11 -Wall -Werror -Wextra -fopenmp -O3
 
 .PHONY: all
 all: slow medium fast
