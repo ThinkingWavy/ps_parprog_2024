@@ -27,7 +27,7 @@ Understanding the architecture of the utilized hardware is paramount for optimiz
 
 #### NUMAode, RAM and Caches
 - Definition: Is a Non-uniform memory access (NUMA) node. It is a server platform that can utilize multiple processors where all processors can access all memory on the board. If some memory is accessed by a processor that lies outside of its node it has to be accessed over the slower NUMA connection. 
-- Two NUMA: Tells us that it is a distributed shared memory. Two NUMAs are needed, because each processor needs also be able to access each others memory/caches on the same node? 
+- NUMA: Tells us that it is a distributed shared memory. Two NUMAs are needed, because each processor needs also be able to access each others memory/caches on the same node? 
 - RAM: 47GB total
 - Caches: L3 Cache is shared in each processor. L2 and L1 is for each core seperatly available. 
 

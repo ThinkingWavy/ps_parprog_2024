@@ -1,0 +1,20 @@
+Executing medium with 1 threads
+sum: 67108864, time: 0.4195 seconds
+0.41user 0.00system 0:00.42elapsed 99%CPU (0avgtext+0avgdata 2000maxresident)k
+0inputs+0outputs (0major+82minor)pagefaults 0swaps
+
+Executing medium with 4 threads
+sum: 67108864, time: 2.0070 seconds
+7.42user 0.00system 0:02.00elapsed 369%CPU (0avgtext+0avgdata 1892maxresident)k
+0inputs+0outputs (0major+88minor)pagefaults 0swaps
+
+Executing medium with 8 threads
+sum: 67108864, time: 2.4256 seconds
+19.24user 0.00system 0:02.42elapsed 793%CPU (0avgtext+0avgdata 1972maxresident)k
+0inputs+0outputs (0major+98minor)pagefaults 0swaps
+
+Executing medium with 16 threads
+sum: 67108864, time: 1.9624 seconds
+27.70user 0.00system 0:01.96elapsed 1411%CPU (0avgtext+0avgdata 2000maxresident)k
+0inputs+0outputs (0major+114minor)pagefaults 0swaps
+

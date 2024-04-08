@@ -1,0 +1,20 @@
+Executing slow with 1 threads
+sum: 67108864, time: 0.9707 seconds
+0.96user 0.00system 0:00.97elapsed 99%CPU (0avgtext+0avgdata 1884maxresident)k
+0inputs+0outputs (0major+83minor)pagefaults 0swaps
+
+Executing slow with 4 threads
+sum: 67108864, time: 4.6780 seconds
+14.90user 0.00system 0:04.67elapsed 318%CPU (0avgtext+0avgdata 2008maxresident)k
+0inputs+0outputs (0major+89minor)pagefaults 0swaps
+
+Executing slow with 8 threads
+sum: 67108864, time: 11.8973 seconds
+91.39user 0.00system 0:11.89elapsed 768%CPU (0avgtext+0avgdata 2084maxresident)k
+0inputs+0outputs (0major+99minor)pagefaults 0swaps
+
+Executing slow with 16 threads
+sum: 67108864, time: 13.4040 seconds
+191.26user 0.00system 0:13.40elapsed 1426%CPU (0avgtext+0avgdata 2100maxresident)k
+0inputs+0outputs (0major+113minor)pagefaults 0swaps
+
