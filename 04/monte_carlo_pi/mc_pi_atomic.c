@@ -33,6 +33,7 @@ int main(int argc, char** argv) {
 	count_t points_in_circle = 0;
 #pragma omp parallel
 	{
+
 		omp_set_num_threads(requested_threads);
 		num_threads = omp_get_num_threads();
 		unsigned int seed = START_SEED + omp_get_thread_num();
@@ -43,8 +44,8 @@ int main(int argc, char** argv) {
 			float y = (rand_r(&seed) / (float)RAND_MAX);
 
 			if(x * x + y * y <= 1.0f) {
-#pragma omp critical
-				{ ++points_in_circle; }
+#pragma omp atomic
+				++points_in_circle;
 			}
 		}
 	}
