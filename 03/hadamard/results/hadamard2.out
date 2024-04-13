@@ -1,0 +1,39 @@
+perf
+
+ Performance counter stats for './hadamard2':
+
+               496      LLC-load-misses:u                                           
+                 3      LLC-store-misses:u                                          
+
+       0.015179567 seconds time elapsed
+
+       0.006491000 seconds user
+       0.000931000 seconds sys
+
+
+
+cachegrind
+==2826926== Cachegrind, a cache and branch-prediction profiler
+==2826926== Copyright (C) 2002-2017, and GNU GPL'd, by Nicholas Nethercote et al.
+==2826926== Using Valgrind-3.19.0 and LibVEX; rerun with -h for copyright info
+==2826926== Command: ./hadamard2
+==2826926== 
+--2826926-- warning: L3 cache found, using its data for the LL simulation.
+--2826926-- warning: specified LL cache: line_size 64  assoc 16  total_size 12,582,912
+--2826926-- warning: simulated LL cache: line_size 64  assoc 24  total_size 12,582,912
+==2826926== 
+==2826926== I   refs:      6,567,753
+==2826926== I1  misses:        1,019
+==2826926== LLi misses:          986
+==2826926== I1  miss rate:      0.02%
+==2826926== LLi miss rate:      0.02%
+==2826926== 
+==2826926== D   refs:      3,408,225  (2,932,594 rd   + 475,631 wr)
+==2826926== D1  misses:      837,907  (  525,988 rd   + 311,919 wr)
+==2826926== LLd misses:       50,988  (    1,348 rd   +  49,640 wr)
+==2826926== D1  miss rate:      24.6% (     17.9%     +    65.6%  )
+==2826926== LLd miss rate:       1.5% (      0.0%     +    10.4%  )
+==2826926== 
+==2826926== LL refs:         838,926  (  527,007 rd   + 311,919 wr)
+==2826926== LL misses:        51,974  (    2,334 rd   +  49,640 wr)
+==2826926== LL miss rate:        0.5% (      0.0%     +    10.4%  )
