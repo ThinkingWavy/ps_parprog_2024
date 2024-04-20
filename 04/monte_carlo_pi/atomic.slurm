@@ -5,7 +5,7 @@
 # Name your job to be able to identify it later
 #SBATCH --job-name=mc_pi_atomic
 # Redirect output stream to this file
-#SBATCH --output=results/%x.out
+#SBATCH --output=results/%x2.log
 # Maximum number of tasks (=processes) to start in total
 #SBATCH --ntasks=1
 # Maximum number of tasks (=processes) to start per node
@@ -24,6 +24,6 @@ threads=(1 2 4 6 12)
 for t in "${threads[@]}"; do
     export OMP_NUM_THREADS=$t
     echo "Executing $executable with $t threads"
-    /usr/bin/time $executable
+    /usr/bin/time -v $executable
     echo ""
 done

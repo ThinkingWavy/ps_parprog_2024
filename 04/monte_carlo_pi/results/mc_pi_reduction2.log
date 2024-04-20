@@ -1,0 +1,130 @@
+Executing /scratch/cb761139/ps_parprog_2024/04/monte_carlo_pi/mc_pi_reduction with 1 threads
+Approximation of PI took 8.417 seconds with 1 threads - value: 3.1415790800
+	Command being timed: "/scratch/cb761139/ps_parprog_2024/04/monte_carlo_pi/mc_pi_reduction"
+	User time (seconds): 8.40
+	System time (seconds): 0.00
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:08.44
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2036
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 82
+	Voluntary context switches: 5
+	Involuntary context switches: 37
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+Executing /scratch/cb761139/ps_parprog_2024/04/monte_carlo_pi/mc_pi_reduction with 2 threads
+Approximation of PI took 4.233 seconds with 2 threads - value: 3.1415909829
+	Command being timed: "/scratch/cb761139/ps_parprog_2024/04/monte_carlo_pi/mc_pi_reduction"
+	User time (seconds): 8.45
+	System time (seconds): 0.00
+	Percent of CPU this job got: 199%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:04.23
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1996
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 85
+	Voluntary context switches: 2
+	Involuntary context switches: 36
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+Executing /scratch/cb761139/ps_parprog_2024/04/monte_carlo_pi/mc_pi_reduction with 4 threads
+Approximation of PI took 2.128 seconds with 4 threads - value: 3.1415605314
+	Command being timed: "/scratch/cb761139/ps_parprog_2024/04/monte_carlo_pi/mc_pi_reduction"
+	User time (seconds): 8.46
+	System time (seconds): 0.00
+	Percent of CPU this job got: 397%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:02.12
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1916
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 90
+	Voluntary context switches: 4
+	Involuntary context switches: 49
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+Executing /scratch/cb761139/ps_parprog_2024/04/monte_carlo_pi/mc_pi_reduction with 6 threads
+Approximation of PI took 1.465 seconds with 6 threads - value: 3.1415958800
+	Command being timed: "/scratch/cb761139/ps_parprog_2024/04/monte_carlo_pi/mc_pi_reduction"
+	User time (seconds): 8.75
+	System time (seconds): 0.00
+	Percent of CPU this job got: 596%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:01.46
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2028
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 92
+	Voluntary context switches: 5
+	Involuntary context switches: 41
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+Executing /scratch/cb761139/ps_parprog_2024/04/monte_carlo_pi/mc_pi_reduction with 12 threads
+Approximation of PI took 0.751 seconds with 12 threads - value: 3.1415694114
+	Command being timed: "/scratch/cb761139/ps_parprog_2024/04/monte_carlo_pi/mc_pi_reduction"
+	User time (seconds): 8.82
+	System time (seconds): 0.00
+	Percent of CPU this job got: 1170%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.75
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2016
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 105
+	Voluntary context switches: 24
+	Involuntary context switches: 20
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+

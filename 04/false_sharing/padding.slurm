@@ -3,9 +3,9 @@
 # Execute job in the partition "lva" unless you have special requirements.
 #SBATCH --partition=lva
 # Name your job to be able to identify it later
-#SBATCH --job-name=mc_pi_critical
+#SBATCH --job-name=padding
 # Redirect output stream to this file
-#SBATCH --output=results/%x2.log
+#SBATCH --output=results/%x.log
 # Maximum number of tasks (=processes) to start in total
 #SBATCH --ntasks=1
 # Maximum number of tasks (=processes) to start per node
@@ -15,7 +15,7 @@
 
 # Check if there's an argument provided
 
-executable="/scratch/cb761139/ps_parprog_2024/04/monte_carlo_pi/mc_pi_critical"
+executable="/scratch/cb761139/ps_parprog_2024/04/false_sharing/padding"
 
 # Define the number of threads
 threads=(1 2 4 6 12)
@@ -24,6 +24,6 @@ threads=(1 2 4 6 12)
 for t in "${threads[@]}"; do
     export OMP_NUM_THREADS=$t
     echo "Executing $executable with $t threads"
-    /usr/bin/time -v $executable $t
+    perf stat -e L1-dcache-load-misses $executable
     echo ""
 done

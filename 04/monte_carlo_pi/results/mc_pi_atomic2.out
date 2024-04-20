@@ -1,0 +1,15 @@
+Executing /scratch/cb761139/ps_parprog_2024/04/monte_carlo_pi/mc_pi_atomic with 1 threads
+Approximation of PI took 11.358 seconds with 1 threads - value: 3.1415790800
+
+Executing /scratch/cb761139/ps_parprog_2024/04/monte_carlo_pi/mc_pi_atomic with 2 threads
+Approximation of PI took 11.496 seconds with 2 threads - value: 3.1415909829
+
+Executing /scratch/cb761139/ps_parprog_2024/04/monte_carlo_pi/mc_pi_atomic with 4 threads
+Approximation of PI took 21.196 seconds with 4 threads - value: 3.1415605314
+
+Executing /scratch/cb761139/ps_parprog_2024/04/monte_carlo_pi/mc_pi_atomic with 6 threads
+Approximation of PI took 41.130 seconds with 6 threads - value: 3.1415958800
+
+Executing /scratch/cb761139/ps_parprog_2024/04/monte_carlo_pi/mc_pi_atomic with 12 threads
+Approximation of PI took 22.624 seconds with 12 threads - value: 3.1415694114
+

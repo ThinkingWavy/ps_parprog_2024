@@ -1,0 +1,70 @@
+Executing /scratch/cb761139/ps_parprog_2024/04/false_sharing/padding with 1 threads
+Approximation of PI took 10.965 seconds with 1 threads - value: 3.1415790800
+
+ Performance counter stats for '/scratch/cb761139/ps_parprog_2024/04/false_sharing/padding':
+
+            19,223      L1-dcache-load-misses:u                                     
+
+      10.979318800 seconds time elapsed
+
+      10.951186000 seconds user
+       0.000999000 seconds sys
+
+
+
+Executing /scratch/cb761139/ps_parprog_2024/04/false_sharing/padding with 2 threads
+Approximation of PI took 10.966 seconds with 1 threads - value: 3.1415790800
+
+ Performance counter stats for '/scratch/cb761139/ps_parprog_2024/04/false_sharing/padding':
+
+            19,457      L1-dcache-load-misses:u                                     
+
+      10.974392223 seconds time elapsed
+
+      10.952741000 seconds user
+       0.000000000 seconds sys
+
+
+
+Executing /scratch/cb761139/ps_parprog_2024/04/false_sharing/padding with 4 threads
+Approximation of PI took 10.975 seconds with 1 threads - value: 3.1415790800
+
+ Performance counter stats for '/scratch/cb761139/ps_parprog_2024/04/false_sharing/padding':
+
+            19,457      L1-dcache-load-misses:u                                     
+
+      10.981210078 seconds time elapsed
+
+      10.960233000 seconds user
+       0.000997000 seconds sys
+
+
+
+Executing /scratch/cb761139/ps_parprog_2024/04/false_sharing/padding with 6 threads
+Approximation of PI took 10.962 seconds with 1 threads - value: 3.1415790800
+
+ Performance counter stats for '/scratch/cb761139/ps_parprog_2024/04/false_sharing/padding':
+
+            18,628      L1-dcache-load-misses:u                                     
+
+      10.971010254 seconds time elapsed
+
+      10.948188000 seconds user
+       0.000992000 seconds sys
+
+
+
+Executing /scratch/cb761139/ps_parprog_2024/04/false_sharing/padding with 12 threads
+Approximation of PI took 10.969 seconds with 1 threads - value: 3.1415790800
+
+ Performance counter stats for '/scratch/cb761139/ps_parprog_2024/04/false_sharing/padding':
+
+            19,405      L1-dcache-load-misses:u                                     
+
+      10.974751328 seconds time elapsed
+
+      10.954665000 seconds user
+       0.000992000 seconds sys
+
+
+

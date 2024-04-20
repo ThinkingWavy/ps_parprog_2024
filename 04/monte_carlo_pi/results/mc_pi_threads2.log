@@ -1,0 +1,25 @@
+Executing /scratch/cb761139/ps_parprog_2024/04/monte_carlo_pi/mc_pi_pthreads with 1 threads
+Approximation of PI took 10.982 seconds with 1 threads - value: 3.1415790800
+10.96user 0.00system 0:10.98elapsed 99%CPU (0avgtext+0avgdata 1692maxresident)k
+0inputs+0outputs (0major+74minor)pagefaults 0swaps
+
+Executing /scratch/cb761139/ps_parprog_2024/04/monte_carlo_pi/mc_pi_pthreads with 2 threads
+Approximation of PI took 5.486 seconds with 2 threads - value: 3.1415909829
+10.93user 0.00system 0:05.48elapsed 199%CPU (0avgtext+0avgdata 1724maxresident)k
+0inputs+0outputs (0major+75minor)pagefaults 0swaps
+
+Executing /scratch/cb761139/ps_parprog_2024/04/monte_carlo_pi/mc_pi_pthreads with 4 threads
+Approximation of PI took 2.773 seconds with 4 threads - value: 3.1415605314
+10.99user 0.00system 0:02.77elapsed 396%CPU (0avgtext+0avgdata 1640maxresident)k
+0inputs+0outputs (0major+80minor)pagefaults 0swaps
+
+Executing /scratch/cb761139/ps_parprog_2024/04/monte_carlo_pi/mc_pi_pthreads with 6 threads
+Approximation of PI took 1.929 seconds with 6 threads - value: 3.1415958743
+11.43user 0.00system 0:01.92elapsed 592%CPU (0avgtext+0avgdata 1852maxresident)k
+0inputs+0outputs (0major+92minor)pagefaults 0swaps
+
+Executing /scratch/cb761139/ps_parprog_2024/04/monte_carlo_pi/mc_pi_pthreads with 12 threads
+Approximation of PI took 0.972 seconds with 12 threads - value: 3.1415694114
+11.45user 0.00system 0:00.97elapsed 1178%CPU (0avgtext+0avgdata 1856maxresident)k
+0inputs+0outputs (0major+109minor)pagefaults 0swaps
+

@@ -1,0 +1,120 @@
+Executing /scratch/cb761139/ps_parprog_2024/04/false_sharing/local_variable with 1 threads
+Approximation of PI took 11.795 seconds with 1 threads - value: 8.8317788629
+
+ Performance counter stats for '/scratch/cb761139/ps_parprog_2024/04/false_sharing/local_variable':
+
+         11,795.86 msec task-clock:u              #    1.000 CPUs utilized          
+                 0      context-switches:u        #    0.000 /sec                   
+                 0      cpu-migrations:u          #    0.000 /sec                   
+                69      page-faults:u             #    5.850 /sec                   
+    35,775,245,105      cycles:u                  #    3.033 GHz                      (83.33%)
+    15,421,912,413      stalled-cycles-frontend:u #   43.11% frontend cycles idle     (83.33%)
+     3,594,181,966      stalled-cycles-backend:u  #   10.05% backend cycles idle      (66.67%)
+    46,040,953,797      instructions:u            #    1.29  insn per cycle         
+                                                  #    0.33  stalled cycles per insn  (83.33%)
+     5,600,139,689      branches:u                #  474.755 M/sec                    (83.33%)
+       183,317,648      branch-misses:u           #    3.27% of all branches          (83.33%)
+
+      11.801400637 seconds time elapsed
+
+      11.705956000 seconds user
+       0.003989000 seconds sys
+
+
+
+Executing /scratch/cb761139/ps_parprog_2024/04/false_sharing/local_variable with 2 threads
+Approximation of PI took 11.809 seconds with 1 threads - value: 8.8317788629
+
+ Performance counter stats for '/scratch/cb761139/ps_parprog_2024/04/false_sharing/local_variable':
+
+         11,809.64 msec task-clock:u              #    1.000 CPUs utilized          
+                 0      context-switches:u        #    0.000 /sec                   
+                 0      cpu-migrations:u          #    0.000 /sec                   
+                67      page-faults:u             #    5.673 /sec                   
+    35,808,448,040      cycles:u                  #    3.032 GHz                      (83.33%)
+    15,454,220,206      stalled-cycles-frontend:u #   43.16% frontend cycles idle     (83.34%)
+     3,608,722,379      stalled-cycles-backend:u  #   10.08% backend cycles idle      (66.67%)
+    46,047,585,766      instructions:u            #    1.29  insn per cycle         
+                                                  #    0.34  stalled cycles per insn  (83.34%)
+     5,600,268,620      branches:u                #  474.212 M/sec                    (83.34%)
+       183,308,942      branch-misses:u           #    3.27% of all branches          (83.33%)
+
+      11.810857510 seconds time elapsed
+
+      11.721515000 seconds user
+       0.000992000 seconds sys
+
+
+
+Executing /scratch/cb761139/ps_parprog_2024/04/false_sharing/local_variable with 4 threads
+Approximation of PI took 11.869 seconds with 1 threads - value: 8.8317788629
+
+ Performance counter stats for '/scratch/cb761139/ps_parprog_2024/04/false_sharing/local_variable':
+
+         11,869.77 msec task-clock:u              #    1.000 CPUs utilized          
+                 0      context-switches:u        #    0.000 /sec                   
+                 0      cpu-migrations:u          #    0.000 /sec                   
+                67      page-faults:u             #    5.645 /sec                   
+    36,095,399,051      cycles:u                  #    3.041 GHz                      (83.33%)
+    15,701,187,135      stalled-cycles-frontend:u #   43.50% frontend cycles idle     (83.33%)
+     3,732,179,066      stalled-cycles-backend:u  #   10.34% backend cycles idle      (66.67%)
+    46,042,705,902      instructions:u            #    1.28  insn per cycle         
+                                                  #    0.34  stalled cycles per insn  (83.34%)
+     5,598,941,681      branches:u                #  471.698 M/sec                    (83.34%)
+       183,306,092      branch-misses:u           #    3.27% of all branches          (83.33%)
+
+      11.870880820 seconds time elapsed
+
+      11.778353000 seconds user
+       0.001986000 seconds sys
+
+
+
+Executing /scratch/cb761139/ps_parprog_2024/04/false_sharing/local_variable with 6 threads
+Approximation of PI took 11.758 seconds with 1 threads - value: 8.8317788629
+
+ Performance counter stats for '/scratch/cb761139/ps_parprog_2024/04/false_sharing/local_variable':
+
+         11,758.71 msec task-clock:u              #    1.000 CPUs utilized          
+                 0      context-switches:u        #    0.000 /sec                   
+                 0      cpu-migrations:u          #    0.000 /sec                   
+                67      page-faults:u             #    5.698 /sec                   
+    35,766,798,886      cycles:u                  #    3.042 GHz                      (83.33%)
+    15,422,959,262      stalled-cycles-frontend:u #   43.12% frontend cycles idle     (83.33%)
+     3,594,900,433      stalled-cycles-backend:u  #   10.05% backend cycles idle      (66.66%)
+    46,045,971,040      instructions:u            #    1.29  insn per cycle         
+                                                  #    0.33  stalled cycles per insn  (83.33%)
+     5,600,239,204      branches:u                #  476.263 M/sec                    (83.33%)
+       183,299,868      branch-misses:u           #    3.27% of all branches          (83.34%)
+
+      11.760241724 seconds time elapsed
+
+      11.670333000 seconds user
+       0.000999000 seconds sys
+
+
+
+Executing /scratch/cb761139/ps_parprog_2024/04/false_sharing/local_variable with 12 threads
+Approximation of PI took 11.860 seconds with 1 threads - value: 8.8317788629
+
+ Performance counter stats for '/scratch/cb761139/ps_parprog_2024/04/false_sharing/local_variable':
+
+         11,860.37 msec task-clock:u              #    1.000 CPUs utilized          
+                 0      context-switches:u        #    0.000 /sec                   
+                 0      cpu-migrations:u          #    0.000 /sec                   
+                67      page-faults:u             #    5.649 /sec                   
+    35,940,170,984      cycles:u                  #    3.030 GHz                      (83.33%)
+    15,584,208,811      stalled-cycles-frontend:u #   43.36% frontend cycles idle     (83.33%)
+     3,687,823,398      stalled-cycles-backend:u  #   10.26% backend cycles idle      (66.66%)
+    46,044,131,821      instructions:u            #    1.28  insn per cycle         
+                                                  #    0.34  stalled cycles per insn  (83.33%)
+     5,599,836,686      branches:u                #  472.147 M/sec                    (83.34%)
+       183,331,622      branch-misses:u           #    3.27% of all branches          (83.34%)
+
+      11.861484179 seconds time elapsed
+
+      11.767215000 seconds user
+       0.002979000 seconds sys
+
+
+

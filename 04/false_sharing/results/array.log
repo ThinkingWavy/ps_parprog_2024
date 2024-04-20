@@ -1,0 +1,70 @@
+Executing /scratch/cb761139/ps_parprog_2024/04/false_sharing/array with 1 threads
+Approximation of PI took 10.930 seconds with 1 threads - value: 3.1415790800
+
+ Performance counter stats for '/scratch/cb761139/ps_parprog_2024/04/false_sharing/array':
+
+            20,267      L1-dcache-load-misses:u                                     
+
+      10.942499475 seconds time elapsed
+
+      10.913153000 seconds user
+       0.000000000 seconds sys
+
+
+
+Executing /scratch/cb761139/ps_parprog_2024/04/false_sharing/array with 2 threads
+Approximation of PI took 10.929 seconds with 1 threads - value: 3.1415790800
+
+ Performance counter stats for '/scratch/cb761139/ps_parprog_2024/04/false_sharing/array':
+
+            20,024      L1-dcache-load-misses:u                                     
+
+      10.938709758 seconds time elapsed
+
+      10.913256000 seconds user
+       0.001000000 seconds sys
+
+
+
+Executing /scratch/cb761139/ps_parprog_2024/04/false_sharing/array with 4 threads
+Approximation of PI took 10.927 seconds with 1 threads - value: 3.1415790800
+
+ Performance counter stats for '/scratch/cb761139/ps_parprog_2024/04/false_sharing/array':
+
+            19,911      L1-dcache-load-misses:u                                     
+
+      10.935409848 seconds time elapsed
+
+      10.911373000 seconds user
+       0.000996000 seconds sys
+
+
+
+Executing /scratch/cb761139/ps_parprog_2024/04/false_sharing/array with 6 threads
+Approximation of PI took 10.921 seconds with 1 threads - value: 3.1415790800
+
+ Performance counter stats for '/scratch/cb761139/ps_parprog_2024/04/false_sharing/array':
+
+            18,556      L1-dcache-load-misses:u                                     
+
+      10.927798158 seconds time elapsed
+
+      10.905482000 seconds user
+       0.000996000 seconds sys
+
+
+
+Executing /scratch/cb761139/ps_parprog_2024/04/false_sharing/array with 12 threads
+Approximation of PI took 10.928 seconds with 1 threads - value: 3.1415790800
+
+ Performance counter stats for '/scratch/cb761139/ps_parprog_2024/04/false_sharing/array':
+
+            19,889      L1-dcache-load-misses:u                                     
+
+      10.929193778 seconds time elapsed
+
+      10.911308000 seconds user
+       0.000996000 seconds sys
+
+
+

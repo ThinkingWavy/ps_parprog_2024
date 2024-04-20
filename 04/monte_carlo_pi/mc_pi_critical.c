@@ -10,11 +10,7 @@
 
 #define START_SEED 0
 
-typedef uint64_t timepoint_t;
 typedef uint32_t count_t;
-
-static timepoint_t time_ns();
-static double elapsed_seconds(timepoint_t start, timepoint_t end);
 
 int main(int argc, char** argv) {
 	// read input arguments
@@ -28,7 +24,7 @@ int main(int argc, char** argv) {
 	int num_threads = 0;
 
 	// start time measurement
-	timepoint_t start = time_ns();
+	double start = omp_get_wtime();
 
 	count_t points_in_circle = 0;
 #pragma omp parallel
@@ -51,22 +47,11 @@ int main(int argc, char** argv) {
 	double pi_approximation = 4.0 * (points_in_circle / (double)total_iterations);
 
 	// print result and elapsed time
-	timepoint_t end = time_ns();
-	double elapsed_time = elapsed_seconds(start, end);
+	double end = omp_get_wtime();
+	double open_mp_elapsed_time = end - start;
 
-	printf("Approximation of PI took %.3f seconds with %u threads - value: %.10f\n", elapsed_time,
-	       num_threads, pi_approximation);
+	printf("Approximation of PI took %.3f seconds with %u threads - value: %.10f\n",
+	       open_mp_elapsed_time, num_threads, pi_approximation);
 
 	return EXIT_SUCCESS;
-}
-
-static timepoint_t time_ns() {
-	// Note: We assume that all time information fits into an uint64_t
-	struct timespec now;
-	clock_gettime(CLOCK_MONOTONIC, &now);
-	return ((timepoint_t)now.tv_sec) * ((timepoint_t)1E9) + now.tv_nsec;
-}
-
-static double elapsed_seconds(timepoint_t start, timepoint_t end) {
-	return ((start > end) ? start - end : end - start) / 1E9;
 }
