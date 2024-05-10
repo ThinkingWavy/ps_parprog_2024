@@ -75,7 +75,17 @@ for (i=1; i<N; i++) {
 | ------ | -------- | ---- | -------- | ------- | ----------- |
 | S1:x   | $\delta$ | S2:x | 0        | =       | independent |
 
-The Code snippet is correctly parallized. Order of S1 and S2 may not be switched.
+The Code snippet is not correctly parallized. The variable should be private x. Because otherwise, it is a global variable that has concurrent accesses. 
+
+Solution:
+```C
+#pragma omp parallel for private(x)
+for (i=1; i<N; i++) {
+   x = sqrt(b[i]) - 1; //S1
+   a[i] = x*x + 2*x + 1; //S2
+}
+```
+
 
 ### Snippet 4
 ```c
@@ -89,9 +99,11 @@ a[0] = x;
 ```
 
 A race condition occurs because the write execution of `a[0]` depends on which order the loops are carried out. To solve this issue, a `lastprivate[x]` can be used.
+The `firstprivate(f)`is needed because otherwise the local variable f is not initialized. Alternatively, the variable f could be left global in this case.
+
 ```c
 f = 2;
-#pragma omp parallel for private(f) lastprivate(x)
+#pragma omp parallel for firstprivate(f) lastprivate(x)
 for (i=1; i<N; i++) {
     x = f * b[i];
     a[i] = x - 7;
@@ -150,7 +162,7 @@ for (i=1; i<N; i++) {
 - not vectorized
   > analysis.c:19:24: missed: statement clobbers memory: \_\_builtin_memmove (&a, \_12, 4080);
 
-Each loop is analyzed for its structure, including loop nest analysis, data references, scalar cycles, and loop induction variables. The compiler tries different vectorization modes to determine if vectorization is possible, considering factors like loop structure, data references, and alignments Afterwards the cost of vectorization is analysed, considering factors such as vector inside/outside loop costs, scalar iteration costs, and prologue/epilogue costs.
+Each loop is analyzed for its structure, including loop nest analysis, data references, scalar cycles, and loop induction variables. The compiler tries different vectorization modes to determine if vectorization is possible, considering factors like loop structure, data references, and alignments Afterwards the cost of vectorization is analyzed, considering factors such as vector inside/outside loop costs, scalar iteration costs, and prologue/epilogue costs.
 
 ## Exercise 3:
 
@@ -205,7 +217,7 @@ for (In = 1; In <= (N+5)/9; In++){//Step 1
 i = 9*In+5 //Step 3
 ```  
 
-### Snippet 3:
+### Snippet 3: Dependency Analysis
 ```c
 for(int i = 1; i < N; i++) {
     for(int j = 1; j < M; j++) {
