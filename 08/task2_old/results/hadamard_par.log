@@ -1,0 +1,15 @@
+group: 1, num_threads: 1, time:0.4589
+group: 1, num_threads: 1, time:1.8335
+group: 1, num_threads: 1, time:4.2313
+group: 1, num_threads: 2, time:0.2631
+group: 1, num_threads: 2, time:1.0692
+group: 1, num_threads: 2, time:2.3736
+group: 1, num_threads: 4, time:0.1626
+group: 1, num_threads: 4, time:0.6821
+group: 1, num_threads: 4, time:1.5105
+group: 1, num_threads: 6, time:0.1295
+group: 1, num_threads: 6, time:0.5099
+group: 1, num_threads: 6, time:1.1905
+group: 1, num_threads: 12, time:0.1261
+group: 1, num_threads: 12, time:0.4573
+group: 1, num_threads: 12, time:1.0038

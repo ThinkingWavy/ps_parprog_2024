@@ -1,0 +1,5 @@
+num_threads: 1, res:0  time:4.1678
+num_threads: 2, res:0  time:2.4484
+num_threads: 4, res:0  time:1.5100
+num_threads: 6, res:0  time:1.1936
+num_threads: 12, res:0  time:1.2049
